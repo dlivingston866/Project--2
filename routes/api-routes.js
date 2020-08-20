@@ -17,11 +17,13 @@ module.exports = function(app) {
     app.post("/api/posts", function(req, res) {
         console.log(req.body);
         db.Post.create({
-            item: req.body.item,
-            category: req.body.category,
-            number: req.body.number
-
-        })
+                item: req.body.item,
+                category: req.body.category,
+                number: req.body.number
+            })
+            .then(function(dbPost) {
+                res.json(dbPost);
+            })
     })
 
 
