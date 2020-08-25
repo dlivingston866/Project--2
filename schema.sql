@@ -12,3 +12,4 @@ PRIMARY KEY (position)
 );
 
 SELECT * FROM food5000;
+
