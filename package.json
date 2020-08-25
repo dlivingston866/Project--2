@@ -11,5 +11,16 @@
     "dependencies": {
         "inquirer": "^6.2.1",
         "mysql": "^2.16.0"
-    }
+    "sequelize": "^4.41.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlivingston866/Project-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlivingston866/Project-2/issues"
+  },
+  "homepage": "https://github.com/dlivingston866/Project-2#readme",
+  "devDependencies": {},
+  "description": ""
 }
