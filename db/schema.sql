@@ -1,4 +1,2 @@
--- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS groceries;
--- Creates the "blogger" database --
-CREATE DATABASE groceries;
+DROP DATABASE IF EXISTS `sequelize_food`;
+CREATE DATABASE `sequelize_food`;

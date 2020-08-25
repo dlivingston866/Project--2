@@ -1,7 +1,7 @@
-{
+
   "development": {
     "username": "root",
-    "password": "etoo123",
+    "password": "root",
     "database": "newFood_db",
     "host": "localhost",
     "port": 3306,
@@ -22,3 +22,4 @@
     "dialect": "mysql"
   }
 }
+
