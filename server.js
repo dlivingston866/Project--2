@@ -36,6 +36,12 @@ app.listen(PORT, function() {
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
+let express = require("express");
+
+// Sets up the Express App
+// =============================================================
+let app = express();
+let PORT = process.env.PORT || 8080;
 var express = require("express");
 
 // Sets up the Express App
@@ -64,3 +70,4 @@ db.sequelize.sync().then(function() {
         console.log("App listening on PORT " + PORT);
     });
 });
+
