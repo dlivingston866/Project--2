@@ -1,12 +1,11 @@
 {
-  "name": "orm-to-sequelize",
+  "name": "project-2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
   },
   "keywords": [],
   "author": "",

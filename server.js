@@ -10,6 +10,12 @@ let express = require("express");
 // =============================================================
 let app = express();
 let PORT = process.env.PORT || 8080;
+var express = require("express");
+
+// Sets up the Express App
+// =============================================================
+var app = express();
+var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 var db = require("./models");
