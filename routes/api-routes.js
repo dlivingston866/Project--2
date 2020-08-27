@@ -9,29 +9,41 @@
 
 // Grabbing our models
 
-let db = require("../models");
+const Foods = require("../models/food.js");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the todos
-  app.get("/api/newFoods", function(req, res) {
+  // Get all foods
+  app.get("/api/all", function(req, res) {
+
+    // Finding all Foods, and then returning them to the user as JSON.
+    // Sequelize queries are asynchronous, which helps with perceived speed.
+    // If we want something to be guaranteed to happen after the query, we'll use
+    // the .then function
+    Foods.findAll({}).then(function(results) {
+      // results are available to us inside the .then
+      res.json(results);
+    });
 
   });
 
-  // POST route for saving a new todo. You can create a todo using the data on req.body
-  app.post("/api/newFoods", function(req, res) {
+  // Add a food
+  app.post("/api/new", function(req, res) {
+
+    console.log("Food Data:");
+    console.log(req.body);
+
+    Foods.create({
+      food: req.body.food,
+      category: req.body.category
+      })
+        .then(function(results) {
+      // `results` here would be the newly created food
+          res.end();
+          });
 
   });
 
-  // DELETE route for deleting todos. You can access the todo's id in req.params.id
-  app.delete("/api/newFoods/:id", function(req, res) {
-
-  });
-
-  // PUT route for updating todos. The updated todo will be available in req.body
-  app.put("/api/newFoods", function(req, res) {
-
-  });
 };

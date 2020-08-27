@@ -1,7 +1,12 @@
-module.exports = function(sequelize, DataTypes) {
-    var NewFoods = sequelize.define("NewFoods", {
-        text: DataTypes.STRING,
-        complete: DataTypes.BOOLEAN
-    });
-    return NewFoods;
-};
+// Dependencies
+// =============================================================
+module.exports = function(sequelize, DataTypes){
+  // Creates a "Chirp" model that matches up with DB
+  const Food = sequelize.define("food", {
+    food: DataTypes.STRING,
+    category: DataTypes.STRING,
+    price: DataTypes.DATE,
+    region: DataTypes.STRING
+  });
+  return Food;
+}
