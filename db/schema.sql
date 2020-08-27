@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS `sequelize_food`;
-CREATE DATABASE `sequelize_food`;
+DROP DATABASE IF EXISTS new_foodsDB;
+CREATE database new_foodsDB;
+
+
