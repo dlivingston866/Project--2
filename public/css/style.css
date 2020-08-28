@@ -1,8 +1,9 @@
-.chirp {
+body {
     padding: 10px;
     margin: 10px;
-    background-color: #e8f9ff;
+    background-color: #F3EBE8;
 }
+
 
 .cool-font {
     font-family: Shrikhand, cursive;
@@ -29,9 +30,43 @@ textarea {
     border-color: #1da1f2;
     border-style: solid;
     border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+#nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 3em 0;
+    padding: 0;
+    font: size 1;em;
+    list-style: none ;
+}
+
+#nav li a:hover {
+    color: #fff;
+ }
 
 p {
     margin: 0;
     font-size: 16px;
+}
+.banana {
+    width: 25%;
+}
+.avacado {
+    width: 25%;
+}
+.kale {
+    width: 25%;
+}
+.broccoli {
+    width: 25%;
+}
+.GroceryBag {
+    width: 100%;
+}
+.col-md-4 {
+    text-align: center;
 }
