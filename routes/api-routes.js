@@ -10,7 +10,7 @@
 // Grabbing our models
 
 const Foods = require("../models/food.js");
-
+//foods is not a model is function call function pass seqelize data types 
 // Routes
 // =============================================================
 module.exports = function(app) {

@@ -43,6 +43,10 @@ app.get('/', checkAuthenticated, (req, res) => {
     res.render('index.ejs', { name: req.user.name })
 })
 
+app.get('/login', checkNotAuthenticated, (req, res) => {
+    res.render('login.ejs')
+})
+
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/login',
@@ -112,5 +116,7 @@ db.sequelize
     .then(function() {
         app.listen(PORT, function() {
             console.log("App listening on PORT " + PORT);
+            console.log(`THIS IS OUR SECRET: ${process.env.SESSION_SECRET}`)
+
         });
     });
