@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Vine</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <title>Vine!</title>
+
+	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!-- jQuery -->
@@ -22,33 +25,54 @@
   </head>
   <body>
 
-    <div class="jumbotron">
-      <h1 class="text-center">Vine!</h1>
-    </div>
-
-    <div class="container">
-
+  <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <p class="cool-font">Food Name</p>
-          <input class="form-control" type="text" id="food" placeholder="Enter Grocery:">
-          <br>
-          <p class="cool-font">Category</p>
-          <textarea class="form-control" rows="3" id="category-box" placeholder="Enter Category Here!"></textarea>
-          <button id="food-submit" class="btn btn-lg pull-right">Submit!</button>
+        <div class="col-md-4">
+          <a href="https://www.w3schools.com/"><span>Home</span></a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.w3schools.com/"><span>About</span></a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.w3schools.com/"><span>Contact</span></a>
         </div>
       </div>
-
+  
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h2>Foods</h2>
-          <hr>
-          <div id="food-area"></div>
+        <div class="col-md-5">
+          <h2 class="slogan">
+            Zero-Waste groceries, delivered fast.
+          </h2>
+        </div>
+        <div class="col-md-7">
+          <img class="banana" alt="Banana" src="images/GroceryProductCard1.png"><img class="avacado" alt="Avacado Card" src="images/GroceryProductCard2.png"><img class="kale" alt="Kale" src="images/GroceryProductCard3.png"><img class="broccoli" alt="Broccoli" src="images/GroceryProductCard4.png">
         </div>
       </div>
-
-    </div>
-
-  <script type="text/javascript" src="js/Food.js"></script>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="cool-font">Start Shopping</p>
+                  <input class="form-control" type="text" id="food" placeholder="Search Groceries here...">
+                <br>
+                  <button id="food-submit" class="btn btn-lg pull-right">Submit!</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img class="GroceryBag" alt="GroceryBag" src="images/GroceryBag1.png">
+        </div>
+        <div class="col-md-7">
+          <h2 class="slogan">
+            Plastic is a no-go
+          </h2>
+          <p class="smallSlogan">
+            We are on a mission to remove single-use plastics from the food system. You'll
+            <br>
+            receive groceries in reusable containers, so go ahead, throw out you trashcan. 
+          </p>
+              <div id="food-area"></div>
+        </div>
+      </div>
+  </div>
+	<script type="text/javascript" src="js/Food.js"></script>
   </body>
 </html>
