@@ -43,7 +43,7 @@ $("#Foods-submit").on("click", function(event) {
         row.addClass("foods");
   
         row.append("<p>" + newFoods.food + "</p>");
-        row.append("<p>" + newFoods.categor + "</p>");
+        row.append("<p>" + newFoods.category + "</p>");
   
         $("#food-area").prepend(row);
   
