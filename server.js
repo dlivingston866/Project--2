@@ -2,8 +2,6 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
 
-
-
 const express = require('express')
 const app = express()
 const exphbs = require('express-handlebars')
@@ -23,8 +21,6 @@ initializePassport(
 )
 
 const users = []
-
-
 
 app.set('view-engine', 'ejs')
 app.use(express.urlencoded({ extened: false }))
