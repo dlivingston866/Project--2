@@ -1,0 +1,89 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    background-color: #F3EBE8;
+}
+
+
+.cool-font {
+    font-family: Shrikhand, cursive;
+    font-size: 24px;
+}
+
+input,
+textarea {
+    margin: 20px;
+}
+
+.btn {
+    margin: 10px;
+    font-family: Shrikhand, cursive;
+    color: #1da1f2;
+    background-color: white;
+    border-color: #1da1f2;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#navigationLinks {
+    width: 100%;
+    float: left;
+    margin: 0 0 5em 0;
+    padding: 0;
+    font: size 1em;
+    list-style: none ;
+    color: black;
+}
+
+#navigationLinks a a:hover {
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.banana {
+    width: 25%;
+    height: auto;
+}
+.avacado {
+    width: 25%;
+    height: auto;
+}
+.kale {
+    width: 25%;
+    height: auto;
+}
+.broccoli {
+    width: 25%;
+    height: auto;
+}
+.GroceryBag {
+    width: 100%;
+}
+.col-md-4 {
+    text-align: center;
+}
+.col-md-12 {
+    text-align: center;
+}
+
+#textSlogan {
+    font-family: Shrikhand, cursive;
+    text-align: center;
+}
+#navigationLinks {
+    font-family: Arial, Helvetica, sans-serif;
+}
+img.logoClass {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
