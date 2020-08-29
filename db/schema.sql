@@ -10,15 +10,4 @@ CREATE TABLE newfoods (
     PRIMARY KEY (id)
 );
 
-INSERT INTO newfoods (id, title, category, cost) VALUES ('1', 'tempeh', "vegan", '4');
-INSERT INTO newfoods (id, title, category, cost) VALUES ('2', 'sushi', "fish", '20');
-
-LOAD DATA INFILE '/public/foods.csv'
-INTO TABLE newfoods
-FIELDS TERMINATED BY ','
-ENCLOSED BY ' " '
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
-
-
+SELECT * FROM new_foodsDB.newfoods;
